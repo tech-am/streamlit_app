@@ -123,7 +123,7 @@ elif choose == 'Connection':
 
 elif choose == 'Application':
     with st.form("Application-form", clear_on_submit=False):
-        st.subheader("Welcome")
+        st.subheader("Welcome Admin")
         optin = st.radio("SHOW GRANTS", ['ON ACCOUNT', 'TO ROLE', 'TO USER', 'OF ROLE', 'ON OBJECT'])
         sql = st.text_input("Enter the Object Name ")
         obj_type = st.selectbox('Enter the object type', ['Table', 'View', 'Schema', 'Database', 'Role', 'User', 'Warehouse', 'Pipe', ''], index=8)
