@@ -135,6 +135,6 @@ elif choose == 'Application':
             else:
                 st.warning("No Live Connection!", icon="⚠️")
 else:
-    val = st.selectbox("Exit the Web Application?", options=['Yes', 'No'])
+    val = st.selectbox("Exit the Web Application?", options=['Yes', 'No'], index=1)
     if val == 'Yes':
         btn = st.button('Confirm', on_click=end)
